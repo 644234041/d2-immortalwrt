@@ -12,6 +12,10 @@
 
 # Uncomment a feed source
 
+
+rm -rf feeds/luci/applications/luci-app-passwall
+
+
 # sed -i '/^src-git luci/d' feeds.conf.default
 # echo 'src-git packages https://github.com/immortalwrt/packages.git' >> feeds.conf.default
 # echo 'src-git routing https://github.com/openwrt/routing.git' >> feeds.conf.default
