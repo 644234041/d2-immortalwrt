@@ -23,3 +23,11 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall;pa
 # git clone https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 git clone -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/luci-app-adbyby-plus
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-firewall package/luci-app-firewall
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-turboacc package/luci-app-turboacc
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-uhttpd package/luci-app-uhttpd
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-upnp package/luci-app-upnp
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-watchcat package/luci-app-watchcat
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-timecontrol package/luci-app-timecontrol
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-timewol package/luci-app-timewol
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/applications/luci-app-nft-qos package/luci-app-nft-qos
