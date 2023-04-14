@@ -17,7 +17,7 @@
 # echo 'src-git routing https://github.com/openwrt/routing.git' >> feeds.conf.default
 # echo 'src-git telephony https://github.com/openwrt/telephony.git' >> feeds.conf.default
 
-
+cd openwrt
 rm -rf luci/applications/luci-app-passwall
 
 # Add a feed source
