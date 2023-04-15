@@ -88,7 +88,7 @@ jobs:
     - name: Install Extra Packages
       run: |
         cd openwrt
-        find luci/applications -name "*passwall*" -exec rm -rf {}
+        rm -rf luci/applications/luci-app-passwall
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
