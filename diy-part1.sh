@@ -17,9 +17,6 @@
 # echo 'src-git routing https://github.com/openwrt/routing.git' >> feeds.conf.default
 # echo 'src-git telephony https://github.com/openwrt/telephony.git' >> feeds.conf.default
 
-
-find luci/applications -name "*passwall*" -exec rm -rf {}
-
 # Add a feed source
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall;luci' >>feeds.conf.default
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall;packages' >>feeds.conf.default
@@ -27,3 +24,7 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall;pa
 # git clone https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 # git clone -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 # svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/luci-app-adbyby-plus
+
+
+cd openwrt
+find luci/applications -name "*passwall*" -exec rm -rf {}
