@@ -71,16 +71,6 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
         
-        
-    - name: Install Extra Packages
-      run: |
-        cd openwrt
-        rm -rf luci/applications/luci-app-passwall
-        rm -rf ./luci/applications/luci-app-passwall
-        rm -rf ./feeds/luci/applications/luci-app-passwall
-        rm -rf feeds/luci/applications/luci-app-passwall
-
-
     - name: Clone source code
       working-directory: /workdir
       run: |
