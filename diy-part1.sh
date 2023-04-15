@@ -25,6 +25,4 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall;pa
 # git clone -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 # svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/luci-app-adbyby-plus
 
-
-cd openwrt
-find luci/applications -name "*passwall*" -exec rm -rf {}
+rm -rf luci/applications/luci-app-passwall
