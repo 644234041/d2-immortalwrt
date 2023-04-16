@@ -88,6 +88,9 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
       
+    - name: Install feeds
+      run: cd openwrt && ./scripts/feeds install -a
+      
     - name: Install Extra Packages
       run: |
         cd openwrt
@@ -96,9 +99,6 @@ jobs:
         rm -rf ./feeds/luci/applications/luci-app-passwall
         rm -rf feeds/luci/applications/luci-app-passwall
         
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
-
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
