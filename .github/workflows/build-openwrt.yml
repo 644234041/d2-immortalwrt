@@ -133,14 +133,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
-    - name: Install Extra Packages
-      run: |
-        cd openwrt
-        rm -rf luci/applications/luci-app-passwall
-        rm -rf ./luci/applications/luci-app-passwall
-        rm -rf ./feeds/luci/applications/luci-app-passwall
-        rm -rf feeds/luci/applications/luci-app-passwall
-
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@main
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
