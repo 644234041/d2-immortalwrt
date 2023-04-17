@@ -115,14 +115,6 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Install Extra Packages
-      run: |
-        cd openwrt
-        rm -rf luci/applications/luci-app-passwall
-        rm -rf ./luci/applications/luci-app-passwall
-        rm -rf ./feeds/luci/applications/luci-app-passwall
-        rm -rf feeds/luci/applications/luci-app-passwall
-        
     - name: Compile the firmware
       id: compile
       run: |
