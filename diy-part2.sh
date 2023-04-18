@@ -15,10 +15,3 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 
 #修改主机名
 sed -i 's/ImmortalWrt/Openwrt/g' package/base-files/files/bin/config_generate
-
-
-cd openwrt
-rm -rf luci/applications/luci-app-passwall
-rm -rf ./luci/applications/luci-app-passwall
-rm -rf ./feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-passwall
