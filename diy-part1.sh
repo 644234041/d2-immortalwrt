@@ -21,7 +21,7 @@
 # Add a feed source
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall;luci' >>feeds.conf.default
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall;packages' >>feeds.conf.default
-# echo 'src-git NeteaseMusic https://github.com/cnsilvan/luci-app-unblockneteasemusic.git' >>feeds.conf.default
+echo 'src-git neteasemusic https://github.com/cnsilvan/luci-app-unblockneteasemusic' >>feeds.conf.default
 # git clone https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 # git clone -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 # svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/luci-app-adbyby-plus
